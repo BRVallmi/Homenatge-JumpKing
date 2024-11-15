@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2vd4rso25shi"
-path="res://.godot/imported/snowmask31.png-0f493c8d326853a669db8b4e9f3919c7.ctex"
+uid="uid://frudu0yt6v4v"
+path="res://.godot/imported/bg43_copy.png-d1dbebd3099112f37ebbab7ba9334a29.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/Weather/snowmask31.png"
-dest_files=["res://.godot/imported/snowmask31.png-0f493c8d326853a669db8b4e9f3919c7.ctex"]
+source_file="res://Scenes/Background/bg43_copy.png"
+dest_files=["res://.godot/imported/bg43_copy.png-d1dbebd3099112f37ebbab7ba9334a29.ctex"]
 
 [params]
 

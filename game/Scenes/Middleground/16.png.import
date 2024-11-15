@@ -1,35 +1,34 @@
 [remap]
 
 importer="texture"
-type="StreamTexture"
-path="res://.import/16.png-bce911345f25b6497b7192546cd82951.stex"
+type="CompressedTexture2D"
+uid="uid://b3k5vn6fpd4bf"
+path="res://.godot/imported/16.png-007827c9470c6ffab99a00d5617eee8b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Levels/Middleground/16.png"
-dest_files=[ "res://.import/16.png-bce911345f25b6497b7192546cd82951.stex" ]
+source_file="res://Scenes/Middleground/16.png"
+dest_files=["res://.godot/imported/16.png-007827c9470c6ffab99a00d5617eee8b.ctex"]
 
 [params]
 
 compress/mode=0
+compress/high_quality=false
 compress/lossy_quality=0.7
-compress/hdr_mode=0
-compress/bptc_ldr=0
+compress/hdr_compression=1
 compress/normal_map=0
-flags/repeat=0
-flags/filter=false
-flags/mipmaps=false
-flags/anisotropic=false
-flags/srgb=2
+compress/channel_pack=0
+mipmaps/generate=false
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
 process/fix_alpha_border=true
 process/premult_alpha=false
-process/HDR_as_SRGB=false
-process/invert_color=false
 process/normal_map_invert_y=false
-stream=false
-size_limit=0
-detect_3d=false
-svg/scale=1.0
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=1
