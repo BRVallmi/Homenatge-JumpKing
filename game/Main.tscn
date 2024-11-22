@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dpdkt2yp3be6q"]
+
+[ext_resource type="PackedScene" uid="uid://bx88syg4pyf5q" path="res://Characters/King/King.tscn" id="1_4ilqx"]
+[ext_resource type="PackedScene" uid="uid://cqyc8irkyvfaq" path="res://Scenes/Background_sunset.tscn" id="1_mgmj6"]
+
+[node name="Main" type="Node"]
+
+[node name="Node2D" parent="." instance=ExtResource("1_mgmj6")]
+
+[node name="King" parent="." instance=ExtResource("1_4ilqx")]

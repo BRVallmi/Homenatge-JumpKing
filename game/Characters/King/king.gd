@@ -1,25 +1,26 @@
 extends CharacterBody2D
 
-
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
-
+# Constantes ajustables
+@export var speed = 300.0
+@export var jump_velocity = -400.0
+@export var gravity = 800.0  # Gravedad personalizada
 
 func _physics_process(delta: float) -> void:
-	# Add the gravity.
+	# Aplicar gravedad
 	if not is_on_floor():
-		velocity += get_gravity() * delta
+		velocity.y += gravity * delta
 
-	# Handle jump.
+	# Manejar salto
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
+		velocity.y = jump_velocity
 
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
+	# Movimiento horizontal
 	var direction := Input.get_axis("ui_left", "ui_right")
-	if direction:
-		velocity.x = direction * SPEED
+	if direction != 0:
+		velocity.x = direction * speed
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
+		# Suavizar desaceleración
+		velocity.x = move_toward(velocity.x, 0, speed * delta)
 
+	# Mover al personaje
 	move_and_slide()
