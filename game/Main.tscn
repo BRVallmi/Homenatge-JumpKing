@@ -8,3 +8,4 @@
 [node name="Node2D" parent="." instance=ExtResource("1_mgmj6")]
 
 [node name="King" parent="." instance=ExtResource("1_4ilqx")]
+position = Vector2(356, 455)
