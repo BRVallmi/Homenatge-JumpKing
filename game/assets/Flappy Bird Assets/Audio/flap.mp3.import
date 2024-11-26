@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://3yswn88w0uai"
+path="res://.godot/imported/flap.mp3-9ed480ee2bce9ff510f3e3107e1a3835.mp3str"
+
+[deps]
+
+source_file="res://assets/Flappy Bird Assets/Audio/flap.mp3"
+dest_files=["res://.godot/imported/flap.mp3-9ed480ee2bce9ff510f3e3107e1a3835.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

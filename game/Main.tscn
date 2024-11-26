@@ -1,11 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://dpdkt2yp3be6q"]
+[gd_scene load_steps=2 format=3 uid="uid://bhhkv4c56xsxj"]
 
-[ext_resource type="PackedScene" uid="uid://bx88syg4pyf5q" path="res://Characters/King/King.tscn" id="1_4ilqx"]
-[ext_resource type="PackedScene" uid="uid://cqyc8irkyvfaq" path="res://Scenes/Background_sunset.tscn" id="1_mgmj6"]
+[ext_resource type="Script" path="res://main.gd" id="1_niflq"]
 
-[node name="Main" type="Node"]
+[node name="Main" type="Node2D"]
+position = Vector2(588, 328)
+script = ExtResource("1_niflq")
 
-[node name="Node2D" parent="." instance=ExtResource("1_mgmj6")]
+[node name="Button" type="Button" parent="."]
+offset_left = -118.0
+offset_top = -61.0
+offset_right = 119.0
+offset_bottom = 68.0
+text = "PLAY
+"
 
-[node name="King" parent="." instance=ExtResource("1_4ilqx")]
-position = Vector2(356, 455)
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

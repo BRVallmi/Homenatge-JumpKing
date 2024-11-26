@@ -5,6 +5,9 @@ extends CharacterBody2D
 @export var jump_velocity = -400.0
 @export var gravity = 800.0  # Gravedad personalizada
 
+# Referencia al sprite
+@onready var sprite = $Sprite2D
+
 func _physics_process(delta: float) -> void:
 	# Aplicar gravedad
 	if not is_on_floor():
@@ -18,6 +21,8 @@ func _physics_process(delta: float) -> void:
 	var direction := Input.get_axis("ui_left", "ui_right")
 	if direction != 0:
 		velocity.x = direction * speed
+		# Ajustar la orientación del sprite
+		sprite.flip_h = direction < 0
 	else:
 		# Suavizar desaceleración
 		velocity.x = move_toward(velocity.x, 0, speed * delta)
